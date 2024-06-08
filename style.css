@@ -202,7 +202,7 @@ h2.separator {
 }
 
 .design-shop .design-list {
-  padding: 40px 0;
+  padding: 40px 0px;
   display: flex;
   justify-content: space-between;
   gap: 20px;
@@ -274,6 +274,29 @@ h2.separator {
   background-color: #000;
 }
 
+/* view more button */
+
+.view-more {
+  margin: 10px 0 40px;
+  display: flex;
+  justify-content: center;
+}
+
+.view-more a {
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  background: #dfdcdc;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.view-more a:hover {
+  color: #fff;
+  background: #0f2182;
+}
+
 /* footer */
 footer {
   background-color: #000;
@@ -316,19 +339,34 @@ footer .right .social {
   gap: 10px;
 }
 
-footer .right .social i {
+footer .right .social a i {
   font-size: 30px;
   cursor: pointer;
+  color: #fff;
   transition: color 0.3s ease;
 }
 
-footer .right .social i:hover {
+footer .right .social a i:hover {
   color: #304ffe;
 }
 
 footer .right p {
   font-size: 13px;
   color: #777;
+}
+
+/* reveal effect */
+
+.reveal {
+  position: relative;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: all 0.6s ease-in;
+}
+
+.reveal.active {
+  transform: translateY(0px);
+  opacity: 1;
 }
 
 @media screen and (max-width: 1400px) {

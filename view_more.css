@@ -1,0 +1,151 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "ubuntu", sans-serif;
+}
+
+body {
+  background-color: #f1f1f1;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+img {
+  object-fit: cover;
+}
+
+h2.separator {
+  padding: 0 80px;
+  font-size: 40px;
+  margin-top: 40px;
+}
+
+.design-shop {
+  padding: 0 80px;
+  margin-top: 30px;
+}
+
+.design-shop .category {
+  display: flex;
+  gap: 14px;
+}
+
+.design-shop .category a {
+  background-color: #dfdcdc;
+  padding: 8px 14px;
+  font-size: 15px;
+  border-radius: 14px;
+  transition: all 0.3s ease;
+}
+
+.design-shop .category a:hover {
+  color: #fff;
+  background-color: #0f2182;
+}
+
+.design-shop .design-list {
+  padding: 15px 10px;
+  display: inline-flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.design-shop .design-list .items img {
+  width: 280px;
+  height: 280px;
+  border-radius: 18px;
+}
+
+.design-shop .design-list .items .info {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  padding: 12px 0;
+  border-bottom: 1px solid #edecec;
+}
+
+.design-shop .design-list .items .info h5 {
+  font-size: 18px;
+}
+
+.design-shop .design-list .items .info .anime {
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.design-shop .design-list .items .info .anime i {
+  font-size: 22px;
+  color: #304ffe;
+}
+
+.design-shop .design-list .items .info .anime p {
+  font-size: 12px;
+}
+
+.design-shop .design-list .items .info > p {
+  font-size: 12px;
+  color: #989898;
+}
+
+.design-shop .design-list .items .buy {
+  padding: 14px 0 4px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.design-shop .design-list .items .buy p,
+.design-shop .design-list .items .buy a {
+  background-color: #edecec;
+  padding: 6px 10px;
+  font-size: 13px;
+  border-radius: 10px;
+}
+
+.design-shop .design-list .items .buy a {
+  color: #304ffe;
+  background: transparent;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.design-shop .design-list .items .buy a:hover {
+  color: #fff;
+  background-color: #000;
+}
+
+.buy-project .items,
+.design-shop .design-list .items {
+  padding: 20px;
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.buy-project .items:hover,
+.design-shop .design-list .items:hover {
+  box-shadow: none;
+}
+
+/* reveal effect */
+
+.reveal {
+  position: relative;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: all 0.6s ease-in;
+}
+
+.reveal.active {
+  transform: translateY(0px);
+  opacity: 1;
+}
